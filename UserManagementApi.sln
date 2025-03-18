@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dtos", "Dtos\Dtos.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data_Access", "Data_Access\Data_Access.csproj", "{3BED1501-EE3D-488D-A9B9-2FCD26C697C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testUser", "testUser\testUser.csproj", "{D043C7AE-7825-4F9E-935D-E3981D7BC9A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3BED1501-EE3D-488D-A9B9-2FCD26C697C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BED1501-EE3D-488D-A9B9-2FCD26C697C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BED1501-EE3D-488D-A9B9-2FCD26C697C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D043C7AE-7825-4F9E-935D-E3981D7BC9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D043C7AE-7825-4F9E-935D-E3981D7BC9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D043C7AE-7825-4F9E-935D-E3981D7BC9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D043C7AE-7825-4F9E-935D-E3981D7BC9A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
