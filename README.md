@@ -31,7 +31,7 @@ This is an API project for user management using ASP.NET Core and JWT for authen
 
    ```json
    "ConnectionStrings": {
-     "DefaultConnection": "Server=yourserver;Database=UserManagementDb;Trusted_Connection=True;"
+     "DefaultConnection": "Server=server;Database=UserManagementDb;Trusted_Connection=True;"
    }
    ```
 
@@ -40,9 +40,9 @@ This is an API project for user management using ASP.NET Core and JWT for authen
 
    ```json
    "Jwt": {
-     "Key": "yoursecretkey",
-     "Issuer": "yourissuer",
-     "Audience": "youraudience"
+     "Key": "secretkey",
+     "Issuer": "issuer",
+     "Audience": "audience"
    }
    ```
 
