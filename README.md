@@ -138,44 +138,8 @@ This is an API project for user management using ASP.NET Core and JWT for authen
      "Message": "User profile updated successfully."
    }
    ```
- ## 3. Unit Testing
-
-This project includes unit tests for critical API functions using `xUnit` and `Moq`.
-
-### **Running Tests**:
-To execute unit tests, run the following command in the terminal:
-```bash
-   dotnet test
-```
-
-### **Test Coverage**:
-The unit tests cover the following functionalities:
-- **Registering a User**
-- **Logging In a User**
-- **Fetching User Data**
-- **Updating a User Profile (Access Control Checks)**
-
-Example unit test for login:
-```csharp
-[Fact]
-public async Task Login_ShouldReturnOk_WhenCredentialsAreCorrect()
-{
-    var loginDto = new LoginDto { Email = "user@usersimple.com", Password = "Str0ngP@ss2025" };
-    var user = new Users { Id = "b4eafc84-a163-4f7f-a464-2f2d04d117e6", UserName = "usersimple", Email = loginDto.Email };
-
-    _userManagerMock.Setup(um => um.FindByEmailAsync(loginDto.Email)).ReturnsAsync(user);
-    _userManagerMock.Setup(um => um.CheckPasswordAsync(user, loginDto.Password)).ReturnsAsync(true);
-    _userManagerMock.Setup(um => um.GetRolesAsync(user)).ReturnsAsync(new List<string> { "User" });
-    _signInManagerMock.Setup(sm => sm.SignInAsync(user, false, null)).Returns(Task.CompletedTask);
-
-    var result = await _controller.Login(loginDto);
-
-    Assert.IsType<OkObjectResult>(result);
-}
-```
----
-
-## 4. Important Links:
+ 
+## 3. Important Links:
 
 - **API Documentation**:  (You can use tools like Swagger to display API documentation)
 - **GitHub Repository**:  https://github.com/mahmoudshawky19/UserManagementApi
